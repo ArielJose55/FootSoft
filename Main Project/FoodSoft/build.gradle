@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+	maven {url 'http://repository.jspresso.org/maven2/'}
+    jcenter ()
+}
+
+mainClassName = 'App'
+
+dependencies {
+    compile 'org.apache.poi:poi:3.12'
+	compile 'org.jvnet.substance:substance:4.3'
+	compile 'mysql:mysql-connector-java:5.1.23'
+	compile 'com.toedter:jcalendar:1.4'
+    testCompile 'junit:junit:4.12'
+}
+
+
